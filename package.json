@@ -1,0 +1,38 @@
+{
+  "name": "dsh-preset-rea",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "REA (Reverse Engineer Anything) agent preset for DeepSeek Harness: the standard coding toolset plus the REA skill and the REA MCP server, mounted only while this preset is selected.",
+  "license": "MIT",
+  "author": "ao882866-ux",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ao882866-ux/dsh-preset-rea.git"
+  },
+  "homepage": "https://github.com/ao882866-ux/dsh-preset-rea#readme",
+  "bugs": {
+    "url": "https://github.com/ao882866-ux/dsh-preset-rea/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "agent-preset",
+    "reverse-engineering",
+    "rea",
+    "mcp"
+  ],
+  "files": [
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "icon.svg"
+  ],
+  "dependencies": {
+    "rea-agents": "6.10.1"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

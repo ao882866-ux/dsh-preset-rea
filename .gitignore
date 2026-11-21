@@ -1,0 +1,10 @@
+# 本地 `link:` 开发安装没有依赖解析，靠这个目录兜底；
+# 发布产物与 GitHub 安装都不含它，rea-agents 由 package.json 的 dependencies 安装。
+vendor/
+node_modules/
+
+*.tgz
+*.log
+
+# 只在本机跑：读取本机 DSH 凭据签名会话 cookie，不发布
+_roster.mjs
